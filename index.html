@@ -31,12 +31,16 @@
     <!-- Hero Split Screen -->
     <section class="hero" id="hero">
         <div class="hero-split hero-left">
-            <img src="https://picsum.photos/1920/1080?random=1"
-                alt="VORTEX hero section - dynamic visual composition on the left side" class="hero-bg" id="heroLeft">
+            <img src="https://picsum.photos/960/540?random=1" srcset="https://picsum.photos/960/540?random=1 960w,
+                        https://picsum.photos/1920/1080?random=1 1920w" sizes="(max-width: 768px) 100vw, 50vw"
+                alt="VORTEX hero - dynamic visual composition left" class="hero-bg lazy-placeholder" id="heroLeft"
+                loading="eager">
         </div>
         <div class="hero-split hero-right">
-            <img src="https://picsum.photos/1920/1080?random=2"
-                alt="VORTEX hero section - dynamic visual composition on the right side" class="hero-bg" id="heroRight">
+            <img src="https://picsum.photos/960/540?random=2" srcset="https://picsum.photos/960/540?random=2 960w,
+                        https://picsum.photos/1920/1080?random=2 1920w" sizes="(max-width: 768px) 0vw, 50vw"
+                alt="VORTEX hero - dynamic visual composition right" class="hero-bg lazy-placeholder" id="heroRight"
+                loading="eager">
         </div>
         <div class="hero-content">
             <div class="hero-title">VORTEX</div>
@@ -55,55 +59,65 @@
         <h2 class="bento-title">COLLECTION</h2>
         <div class="bento-grid">
             <button class="bento-item bento-large" tabindex="0">
-                <img src="https://picsum.photos/1600/1200?random=3"
-                    alt="Featured collection showcase - Main highlight of the visual gallery">
+                <img data-src="https://picsum.photos/800/600?random=3" srcset="https://picsum.photos/800/600?random=3 800w,
+                            https://picsum.photos/1600/1200?random=3 1600w"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 100vw, 66vw" alt="Featured collection showcase"
+                    class="lazy-placeholder" loading="lazy">
                 <div class="bento-overlay">
                     <h3>FEATURED</h3>
                     <p>Main showcase piece</p>
                 </div>
             </button>
             <button class="bento-item bento-tall" tabindex="0">
-                <img src="https://picsum.photos/800/1200?random=4"
-                    alt="Portrait composition - Vertical perspective visual art">
+                <img data-src="https://picsum.photos/400/600?random=4" srcset="https://picsum.photos/400/600?random=4 400w,
+                            https://picsum.photos/800/1200?random=4 800w"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw" alt="Portrait composition"
+                    class="lazy-placeholder" loading="lazy">
                 <div class="bento-overlay">
                     <h3>PORTRAIT</h3>
                     <p>Vertical composition</p>
                 </div>
             </button>
             <button class="bento-item bento-wide" tabindex="0">
-                <img src="https://picsum.photos/1200/600?random=5"
-                    alt="Landscape composition - Wide angle perspective visual art">
+                <img data-src="https://picsum.photos/600/300?random=5" srcset="https://picsum.photos/600/300?random=5 600w,
+                            https://picsum.photos/1200/600?random=5 1200w" sizes="(max-width: 768px) 100vw, 50vw"
+                    alt="Landscape composition" class="lazy-placeholder" loading="lazy">
                 <div class="bento-overlay">
                     <h3>LANDSCAPE</h3>
                     <p>Wide angle view</p>
                 </div>
             </button>
             <button class="bento-item bento-small" tabindex="0">
-                <img src="https://picsum.photos/800/800?random=6" alt="Detail shot - Close-up macro perspective art">
+                <img data-src="https://picsum.photos/400/400?random=6" srcset="https://picsum.photos/400/400?random=6 400w,
+                            https://picsum.photos/800/800?random=6 800w" sizes="(max-width: 768px) 100vw, 33vw"
+                    alt="Detail shot" class="lazy-placeholder" loading="lazy">
                 <div class="bento-overlay">
                     <h3>DETAIL</h3>
                     <p>Close up shot</p>
                 </div>
             </button>
             <button class="bento-item bento-small" tabindex="0">
-                <img src="https://picsum.photos/800/800?random=7"
-                    alt="Abstract art - Creative artistic visual expression">
+                <img data-src="https://picsum.photos/400/400?random=7" srcset="https://picsum.photos/400/400?random=7 400w,
+                            https://picsum.photos/800/800?random=7 800w" sizes="(max-width: 768px) 100vw, 33vw"
+                    alt="Abstract art" class="lazy-placeholder" loading="lazy">
                 <div class="bento-overlay">
                     <h3>ABSTRACT</h3>
                     <p>Artistic view</p>
                 </div>
             </button>
             <button class="bento-item bento-wide" tabindex="0">
-                <img src="https://picsum.photos/1200/600?random=8"
-                    alt="Panorama composition - Full spectrum wide view art">
+                <img data-src="https://picsum.photos/600/300?random=8" srcset="https://picsum.photos/600/300?random=8 600w,
+                            https://picsum.photos/1200/600?random=8 1200w" sizes="(max-width: 768px) 100vw, 50vw"
+                    alt="Panorama composition" class="lazy-placeholder" loading="lazy">
                 <div class="bento-overlay">
                     <h3>PANORAMA</h3>
                     <p>Full spectrum</p>
                 </div>
             </button>
             <button class="bento-item bento-small" tabindex="0">
-                <img src="https://picsum.photos/800/800?random=9"
-                    alt="Moment capture - Frozen instant artistic expression">
+                <img data-src="https://picsum.photos/400/400?random=9" srcset="https://picsum.photos/400/400?random=9 400w,
+                            https://picsum.photos/800/800?random=9 800w" sizes="(max-width: 768px) 100vw, 33vw"
+                    alt="Moment capture" class="lazy-placeholder" loading="lazy">
                 <div class="bento-overlay">
                     <h3>MOMENT</h3>
                     <p>Captured time</p>
@@ -118,19 +132,29 @@
         <div class="carousel-container">
             <div class="carousel-track" id="carouselTrack">
                 <div class="carousel-slide" style="transform: rotateY(0deg) translateZ(400px);">
-                    <img src="https://picsum.photos/1400/900?random=10" alt="Slide 1">
+                    <img data-src="https://picsum.photos/700/450?random=10" srcset="https://picsum.photos/700/450?random=10 700w,
+                                https://picsum.photos/1400/900?random=10 1400w" sizes="(max-width: 768px) 90vw, 700px"
+                        alt="Explore slide 1" class="lazy-placeholder" loading="lazy">
                 </div>
                 <div class="carousel-slide" style="transform: rotateY(72deg) translateZ(400px);">
-                    <img src="https://picsum.photos/1400/900?random=11" alt="Slide 2">
+                    <img data-src="https://picsum.photos/700/450?random=11" srcset="https://picsum.photos/700/450?random=11 700w,
+                                https://picsum.photos/1400/900?random=11 1400w" sizes="(max-width: 768px) 90vw, 700px"
+                        alt="Explore slide 2" class="lazy-placeholder" loading="lazy">
                 </div>
                 <div class="carousel-slide" style="transform: rotateY(144deg) translateZ(400px);">
-                    <img src="https://picsum.photos/1400/900?random=12" alt="Slide 3">
+                    <img data-src="https://picsum.photos/700/450?random=12" srcset="https://picsum.photos/700/450?random=12 700w,
+                                https://picsum.photos/1400/900?random=12 1400w" sizes="(max-width: 768px) 90vw, 700px"
+                        alt="Explore slide 3" class="lazy-placeholder" loading="lazy">
                 </div>
                 <div class="carousel-slide" style="transform: rotateY(216deg) translateZ(400px);">
-                    <img src="https://picsum.photos/1400/900?random=13" alt="Slide 4">
+                    <img data-src="https://picsum.photos/700/450?random=13" srcset="https://picsum.photos/700/450?random=13 700w,
+                                https://picsum.photos/1400/900?random=13 1400w" sizes="(max-width: 768px) 90vw, 700px"
+                        alt="Explore slide 4" class="lazy-placeholder" loading="lazy">
                 </div>
                 <div class="carousel-slide" style="transform: rotateY(288deg) translateZ(400px);">
-                    <img src="https://picsum.photos/1400/900?random=14" alt="Slide 5">
+                    <img data-src="https://picsum.photos/700/450?random=14" srcset="https://picsum.photos/700/450?random=14 700w,
+                                https://picsum.photos/1400/900?random=14 1400w" sizes="(max-width: 768px) 90vw, 700px"
+                        alt="Explore slide 5" class="lazy-placeholder" loading="lazy">
                 </div>
             </div>
             <div class="carousel-nav">
@@ -145,19 +169,29 @@
         <h2 class="floating-title">SUSPENDED</h2>
         <div class="floating-container">
             <div class="floating-item">
-                <img src="https://picsum.photos/800/600?random=15" alt="Float 1">
+                <img data-src="https://picsum.photos/400/300?random=15" srcset="https://picsum.photos/400/300?random=15 400w,
+                            https://picsum.photos/800/600?random=15 800w" sizes="400px" alt="Floating visual 1"
+                    class="lazy-placeholder" loading="lazy">
             </div>
             <div class="floating-item">
-                <img src="https://picsum.photos/700/900?random=16" alt="Float 2">
+                <img data-src="https://picsum.photos/350/450?random=16" srcset="https://picsum.photos/350/450?random=16 350w,
+                            https://picsum.photos/700/900?random=16 700w" sizes="350px" alt="Floating visual 2"
+                    class="lazy-placeholder" loading="lazy">
             </div>
             <div class="floating-item">
-                <img src="https://picsum.photos/900/560?random=17" alt="Float 3">
+                <img data-src="https://picsum.photos/450/280?random=17" srcset="https://picsum.photos/450/280?random=17 450w,
+                            https://picsum.photos/900/560?random=17 900w" sizes="450px" alt="Floating visual 3"
+                    class="lazy-placeholder" loading="lazy">
             </div>
             <div class="floating-item">
-                <img src="https://picsum.photos/760/760?random=18" alt="Float 4">
+                <img data-src="https://picsum.photos/380/380?random=18" srcset="https://picsum.photos/380/380?random=18 380w,
+                            https://picsum.photos/760/760?random=18 760w" sizes="380px" alt="Floating visual 4"
+                    class="lazy-placeholder" loading="lazy">
             </div>
             <div class="floating-item">
-                <img src="https://picsum.photos/640/800?random=19" alt="Float 5">
+                <img data-src="https://picsum.photos/320/400?random=19" srcset="https://picsum.photos/320/400?random=19 320w,
+                            https://picsum.photos/640/800?random=19 640w" sizes="320px" alt="Floating visual 5"
+                    class="lazy-placeholder" loading="lazy">
             </div>
         </div>
     </section>
@@ -165,17 +199,57 @@
     <!-- Infinite Scroll -->
     <section class="infinite-section">
         <div class="infinite-track">
-            <div class="infinite-item"><img src="https://picsum.photos/1000/700?random=20" alt="Scroll 1"></div>
-            <div class="infinite-item"><img src="https://picsum.photos/1000/700?random=21" alt="Scroll 2"></div>
-            <div class="infinite-item"><img src="https://picsum.photos/1000/700?random=22" alt="Scroll 3"></div>
-            <div class="infinite-item"><img src="https://picsum.photos/1000/700?random=23" alt="Scroll 4"></div>
-            <div class="infinite-item"><img src="https://picsum.photos/1000/700?random=24" alt="Scroll 5"></div>
+            <div class="infinite-item">
+                <img data-src="https://picsum.photos/500/350?random=20" srcset="https://picsum.photos/500/350?random=20 500w,
+                            https://picsum.photos/1000/700?random=20 1000w" sizes="500px" alt="Infinite scroll 1"
+                    class="lazy-placeholder" loading="lazy">
+            </div>
+            <div class="infinite-item">
+                <img data-src="https://picsum.photos/500/350?random=21" srcset="https://picsum.photos/500/350?random=21 500w,
+                            https://picsum.photos/1000/700?random=21 1000w" sizes="500px" alt="Infinite scroll 2"
+                    class="lazy-placeholder" loading="lazy">
+            </div>
+            <div class="infinite-item">
+                <img data-src="https://picsum.photos/500/350?random=22" srcset="https://picsum.photos/500/350?random=22 500w,
+                            https://picsum.photos/1000/700?random=22 1000w" sizes="500px" alt="Infinite scroll 3"
+                    class="lazy-placeholder" loading="lazy">
+            </div>
+            <div class="infinite-item">
+                <img data-src="https://picsum.photos/500/350?random=23" srcset="https://picsum.photos/500/350?random=23 500w,
+                            https://picsum.photos/1000/700?random=23 1000w" sizes="500px" alt="Infinite scroll 4"
+                    class="lazy-placeholder" loading="lazy">
+            </div>
+            <div class="infinite-item">
+                <img data-src="https://picsum.photos/500/350?random=24" srcset="https://picsum.photos/500/350?random=24 500w,
+                            https://picsum.photos/1000/700?random=24 1000w" sizes="500px" alt="Infinite scroll 5"
+                    class="lazy-placeholder" loading="lazy">
+            </div>
             <!-- Duplicate for seamless loop -->
-            <div class="infinite-item"><img src="https://picsum.photos/1000/700?random=20" alt="Scroll 1"></div>
-            <div class="infinite-item"><img src="https://picsum.photos/1000/700?random=21" alt="Scroll 2"></div>
-            <div class="infinite-item"><img src="https://picsum.photos/1000/700?random=22" alt="Scroll 3"></div>
-            <div class="infinite-item"><img src="https://picsum.photos/1000/700?random=23" alt="Scroll 4"></div>
-            <div class="infinite-item"><img src="https://picsum.photos/1000/700?random=24" alt="Scroll 5"></div>
+            <div class="infinite-item">
+                <img data-src="https://picsum.photos/500/350?random=20" srcset="https://picsum.photos/500/350?random=20 500w,
+                            https://picsum.photos/1000/700?random=20 1000w" sizes="500px" alt="Infinite scroll 1"
+                    class="lazy-placeholder" loading="lazy">
+            </div>
+            <div class="infinite-item">
+                <img data-src="https://picsum.photos/500/350?random=21" srcset="https://picsum.photos/500/350?random=21 500w,
+                            https://picsum.photos/1000/700?random=21 1000w" sizes="500px" alt="Infinite scroll 2"
+                    class="lazy-placeholder" loading="lazy">
+            </div>
+            <div class="infinite-item">
+                <img data-src="https://picsum.photos/500/350?random=22" srcset="https://picsum.photos/500/350?random=22 500w,
+                            https://picsum.photos/1000/700?random=22 1000w" sizes="500px" alt="Infinite scroll 3"
+                    class="lazy-placeholder" loading="lazy">
+            </div>
+            <div class="infinite-item">
+                <img data-src="https://picsum.photos/500/350?random=23" srcset="https://picsum.photos/500/350?random=23 500w,
+                            https://picsum.photos/1000/700?random=23 1000w" sizes="500px" alt="Infinite scroll 4"
+                    class="lazy-placeholder" loading="lazy">
+            </div>
+            <div class="infinite-item">
+                <img data-src="https://picsum.photos/500/350?random=24" srcset="https://picsum.photos/500/350?random=24 500w,
+                            https://picsum.photos/1000/700?random=24 1000w" sizes="500px" alt="Infinite scroll 5"
+                    class="lazy-placeholder" loading="lazy">
+            </div>
         </div>
     </section>
 
