@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VORTEX - Enter the Experience</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="#hero" class="nav-logo">VORTEX</a>
+        <ul class="nav-links">
+            <li><a href="#collection">Collection</a></li>
+            <li><a href="#explore">Explore</a></li>
+            <li><a href="#suspended">Suspended</a></li>
+        </ul>
+        <button class="cursor-toggle" id="cursorToggle">Toggle Cursor</button>
+    </nav>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursorDot"></div>
+
+    <!-- Loader -->
+    <div class="loader" id="loader">
+        <div class="loader-text">VORTEX</div>
+    </div>
+
+    <!-- Hero Split Screen -->
+    <section class="hero" id="hero">
+        <div class="hero-split hero-left">
+            <img src="https://picsum.photos/1920/1080?random=1"
+                alt="VORTEX hero section - dynamic visual composition on the left side" class="hero-bg" id="heroLeft">
+        </div>
+        <div class="hero-split hero-right">
+            <img src="https://picsum.photos/1920/1080?random=2"
+                alt="VORTEX hero section - dynamic visual composition on the right side" class="hero-bg" id="heroRight">
+        </div>
+        <div class="hero-content">
+            <div class="hero-title">VORTEX</div>
+            <div class="hero-subtitle">VISUAL EXPERIENCE</div>
+            <a href="#collection" class="cta-btn">View Collection</a>
+        </div>
+        <div class="scroll-indicator">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 5v14M5 12l7 7 7-7" />
+            </svg>
+        </div>
+    </section>
+
+    <!-- Bento Grid -->
+    <section class="bento-section" id="collection">
+        <h2 class="bento-title">COLLECTION</h2>
+        <div class="bento-grid">
+            <button class="bento-item bento-large" tabindex="0">
+                <img src="https://picsum.photos/1600/1200?random=3"
+                    alt="Featured collection showcase - Main highlight of the visual gallery">
+                <div class="bento-overlay">
+                    <h3>FEATURED</h3>
+                    <p>Main showcase piece</p>
+                </div>
+            </button>
+            <button class="bento-item bento-tall" tabindex="0">
+                <img src="https://picsum.photos/800/1200?random=4"
+                    alt="Portrait composition - Vertical perspective visual art">
+                <div class="bento-overlay">
+                    <h3>PORTRAIT</h3>
+                    <p>Vertical composition</p>
+                </div>
+            </button>
+            <button class="bento-item bento-wide" tabindex="0">
+                <img src="https://picsum.photos/1200/600?random=5"
+                    alt="Landscape composition - Wide angle perspective visual art">
+                <div class="bento-overlay">
+                    <h3>LANDSCAPE</h3>
+                    <p>Wide angle view</p>
+                </div>
+            </button>
+            <button class="bento-item bento-small" tabindex="0">
+                <img src="https://picsum.photos/800/800?random=6" alt="Detail shot - Close-up macro perspective art">
+                <div class="bento-overlay">
+                    <h3>DETAIL</h3>
+                    <p>Close up shot</p>
+                </div>
+            </button>
+            <button class="bento-item bento-small" tabindex="0">
+                <img src="https://picsum.photos/800/800?random=7"
+                    alt="Abstract art - Creative artistic visual expression">
+                <div class="bento-overlay">
+                    <h3>ABSTRACT</h3>
+                    <p>Artistic view</p>
+                </div>
+            </button>
+            <button class="bento-item bento-wide" tabindex="0">
+                <img src="https://picsum.photos/1200/600?random=8"
+                    alt="Panorama composition - Full spectrum wide view art">
+                <div class="bento-overlay">
+                    <h3>PANORAMA</h3>
+                    <p>Full spectrum</p>
+                </div>
+            </button>
+            <button class="bento-item bento-small" tabindex="0">
+                <img src="https://picsum.photos/800/800?random=9"
+                    alt="Moment capture - Frozen instant artistic expression">
+                <div class="bento-overlay">
+                    <h3>MOMENT</h3>
+                    <p>Captured time</p>
+                </div>
+            </button>
+        </div>
+    </section>
+
+    <!-- 3D Carousel -->
+    <section class="carousel-section" id="explore">
+        <h2 class="carousel-title">EXPLORE</h2>
+        <div class="carousel-container">
+            <div class="carousel-track" id="carouselTrack">
+                <div class="carousel-slide" style="transform: rotateY(0deg) translateZ(400px);">
+                    <img src="https://picsum.photos/1400/900?random=10" alt="Slide 1">
+                </div>
+                <div class="carousel-slide" style="transform: rotateY(72deg) translateZ(400px);">
+                    <img src="https://picsum.photos/1400/900?random=11" alt="Slide 2">
+                </div>
+                <div class="carousel-slide" style="transform: rotateY(144deg) translateZ(400px);">
+                    <img src="https://picsum.photos/1400/900?random=12" alt="Slide 3">
+                </div>
+                <div class="carousel-slide" style="transform: rotateY(216deg) translateZ(400px);">
+                    <img src="https://picsum.photos/1400/900?random=13" alt="Slide 4">
+                </div>
+                <div class="carousel-slide" style="transform: rotateY(288deg) translateZ(400px);">
+                    <img src="https://picsum.photos/1400/900?random=14" alt="Slide 5">
+                </div>
+            </div>
+            <div class="carousel-nav">
+                <button class="carousel-btn" id="prevBtn" aria-label="Previous slide">←</button>
+                <button class="carousel-btn" id="nextBtn" aria-label="Next slide">→</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating Gallery -->
+    <section class="floating-section" id="suspended">
+        <h2 class="floating-title">SUSPENDED</h2>
+        <div class="floating-container">
+            <div class="floating-item">
+                <img src="https://picsum.photos/800/600?random=15" alt="Float 1">
+            </div>
+            <div class="floating-item">
+                <img src="https://picsum.photos/700/900?random=16" alt="Float 2">
+            </div>
+            <div class="floating-item">
+                <img src="https://picsum.photos/900/560?random=17" alt="Float 3">
+            </div>
+            <div class="floating-item">
+                <img src="https://picsum.photos/760/760?random=18" alt="Float 4">
+            </div>
+            <div class="floating-item">
+                <img src="https://picsum.photos/640/800?random=19" alt="Float 5">
+            </div>
+        </div>
+    </section>
+
+    <!-- Infinite Scroll -->
+    <section class="infinite-section">
+        <div class="infinite-track">
+            <div class="infinite-item"><img src="https://picsum.photos/1000/700?random=20" alt="Scroll 1"></div>
+            <div class="infinite-item"><img src="https://picsum.photos/1000/700?random=21" alt="Scroll 2"></div>
+            <div class="infinite-item"><img src="https://picsum.photos/1000/700?random=22" alt="Scroll 3"></div>
+            <div class="infinite-item"><img src="https://picsum.photos/1000/700?random=23" alt="Scroll 4"></div>
+            <div class="infinite-item"><img src="https://picsum.photos/1000/700?random=24" alt="Scroll 5"></div>
+            <!-- Duplicate for seamless loop -->
+            <div class="infinite-item"><img src="https://picsum.photos/1000/700?random=20" alt="Scroll 1"></div>
+            <div class="infinite-item"><img src="https://picsum.photos/1000/700?random=21" alt="Scroll 2"></div>
+            <div class="infinite-item"><img src="https://picsum.photos/1000/700?random=22" alt="Scroll 3"></div>
+            <div class="infinite-item"><img src="https://picsum.photos/1000/700?random=23" alt="Scroll 4"></div>
+            <div class="infinite-item"><img src="https://picsum.photos/1000/700?random=24" alt="Scroll 5"></div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-logo">VORTEX</div>
+        <p>An immersive visual experience</p>
+    </footer>
+
+    <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>
